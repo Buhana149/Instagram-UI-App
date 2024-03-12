@@ -9,14 +9,20 @@ class SearchPage extends StatelessWidget {
         appBar: AppBar(
           title: TextField(
             decoration: InputDecoration(
-              suffixIcon: Icon(Icons.search),
+              suffixIcon: IconButton(
+                icon: const Icon(Icons.search),
+                onPressed: () {},
+                ),
             ),
           ),
-          actions: const [
+          actions:  [
             Padding(
-              padding: EdgeInsets.all(8.0),
-              child: Icon(Icons.more_vert),
-            )
+              padding: const EdgeInsets.all(8.0),
+              child: IconButton(
+                icon: const Icon((Icons.more_vert)),
+                onPressed: () {}
+                ,),
+            ),
           ],
         ),
         body: GridView.builder(
