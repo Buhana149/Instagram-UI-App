@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class ReelPage extends StatelessWidget {
   const ReelPage({super.key});
@@ -11,20 +10,24 @@ class ReelPage extends StatelessWidget {
         backgroundColor: Colors.grey[300],
         title: Padding(
           padding: const EdgeInsets.all(8.0),
-          child: Row(children: [
-            Text('For you', style: TextStyle(fontSize: 25)),
+          child: Row(
+            children: [
+            const Text('For you', style: TextStyle(fontSize: 25)),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: IconButton(
                 onPressed: () {},
-                icon: Icon(Icons.arrow_downward_sharp,
+                icon: const Icon(Icons.arrow_downward_sharp,
                 size: 20,)
               ),
             )
           ]),
         ),
         actions: [
-          IconButton(onPressed: () {}, icon: Icon(Icons.camera_alt_outlined))
+          IconButton(
+            onPressed: () {}, 
+            icon: const Icon(Icons.camera_alt_outlined),
+            )
         ],
       ),
       body: Center(
@@ -35,7 +38,7 @@ class ReelPage extends StatelessWidget {
           child: Row(
             children: [
               Padding(
-                padding: EdgeInsets.all(8.0),
+                padding: const EdgeInsets.all(8.0),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
@@ -53,7 +56,7 @@ class ReelPage extends StatelessWidget {
                             onTap: () {},
                             child: Container(
                               decoration: BoxDecoration(
-                                  color: Color.fromARGB(255, 241, 239, 239),
+                                  color: const Color.fromARGB(255, 241, 239, 239),
                                   borderRadius: BorderRadius.circular(5)),
                               height: 15,
                               width: 45,
@@ -67,7 +70,7 @@ class ReelPage extends StatelessWidget {
                       height: 10,
                     ),
                     const Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding:  EdgeInsets.all(8.0),
                       child: SizedBox(
                         width: 200,
                         height: 100,
