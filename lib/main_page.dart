@@ -47,7 +47,7 @@ class _HomePageState extends State<MainPage> {
             icon: Icon(Icons.search), 
             label: 'Search'),
           BottomNavigationBarItem(
-            icon: Icon(Icons.add), 
+            icon: Icon(Icons.add_box_outlined), 
             label: 'Add'),
           BottomNavigationBarItem(
               icon: Icon(Icons.video_collection), 
