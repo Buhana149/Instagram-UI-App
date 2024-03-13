@@ -6,6 +6,31 @@ class ProfilePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(child: Text('Profile PAGE')));
+      appBar: AppBar(
+        title:Padding(
+          padding: const EdgeInsets.all(5.0),
+          child: Row(
+            children: [
+            const Text('gynella_ella47', style: TextStyle(fontSize: 20)),
+            Padding(
+              padding: const EdgeInsets.all(1.0),
+              child: IconButton(
+                onPressed: () {},
+                icon: const Icon(Icons.arrow_downward_sharp,
+                size: 15,)
+              ),
+            )
+          ]),
+        ),
+        actions: [
+          IconButton(
+            onPressed: () {}, 
+            icon: const Icon(Icons.add_box_outlined),
+            )
+        ],
+      ),
+
+      body: Column()
+      );
   }
 }
