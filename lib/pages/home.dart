@@ -1,7 +1,10 @@
+import 'dart:js';
+
 import 'package:flutter/material.dart';
 import 'package:instagram_ui/containers/post_container.dart';
 import 'package:instagram_ui/containers/story_container.dart';
 import 'package:instagram_ui/pages/messenger.dart';
+import 'package:instagram_ui/pages/story_page.dart';
 
 class HomePage extends StatelessWidget {
   final List _post = [
@@ -21,6 +24,14 @@ class HomePage extends StatelessWidget {
     'story 5',
     'story 6',
   ];
+
+  void _openStory(BuildContext context) {
+
+    Navigator.push(
+      context, 
+      MaterialPageRoute(builder: (context) => StoryPage()));
+  }
+
   HomePage({super.key});
 
   @override
@@ -59,6 +70,7 @@ class HomePage extends StatelessWidget {
               itemCount: _stories.length,
               itemBuilder: (context, index) {
                 return StoryBox(
+                  function: _openStory,
                   child: _stories[index],
                 );
               },
