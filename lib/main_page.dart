@@ -26,7 +26,27 @@ class _HomePageState extends State<MainPage> {
         selectedItemColor: Colors.black,
         unselectedItemColor: Colors.grey[400],
         onTap: _onItemTapped,
+
         items: bottomNavigationBarItems,
+
+        items: const [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home), 
+            label: 'Home'),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.search), 
+            label: 'Search'),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.add_box_outlined), 
+            label: 'Add'),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.video_collection), 
+              label: 'Reel'),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person), 
+            label: 'Profile'),
+        ],
+
       ),
     );
   }
