@@ -1,5 +1,3 @@
-import 'dart:js';
-
 import 'package:flutter/material.dart';
 import 'package:instagram_ui/containers/post_container.dart';
 import 'package:instagram_ui/containers/story_container.dart';
@@ -26,10 +24,12 @@ class HomePage extends StatelessWidget {
   ];
 
   void _openStory(BuildContext context) {
-
     Navigator.push(
-      context, 
-      MaterialPageRoute(builder: (context) => StoryPage()));
+      context,
+      MaterialPageRoute(
+        builder: (context) => const StoryPage(),
+      ),
+    );
   }
 
   HomePage({super.key});
@@ -70,7 +70,8 @@ class HomePage extends StatelessWidget {
               itemCount: _stories.length,
               itemBuilder: (context, index) {
                 return StoryBox(
-                  function: _openStory,
+                  onTap: () { _openStory(context); }, 
+                  
                   child: _stories[index],
                 );
               },
