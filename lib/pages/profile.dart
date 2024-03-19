@@ -6,7 +6,9 @@ class ProfilePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[300],
       appBar: AppBar(
+        backgroundColor: Colors.grey[300],
         title:Padding(
           padding: const EdgeInsets.all(5.0),
           child: Row(
@@ -34,11 +36,54 @@ class ProfilePage extends StatelessWidget {
         ],
       ),
 
-      body: Row(
-        mainAxisSize: MainAxisSize.min,
+      body: const Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Icon(Icons.person)
+           Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Padding(
+                padding: EdgeInsets.only(left: 15.0, right: 15, top: 15, bottom: 30),
+                child: Icon(
+                  Icons.person, 
+                  size: 40,
+                  ),
+              ),
+             
+              Padding(
+                padding: EdgeInsets.only(left: 40.0),
+                child: Text('16 \nposts'),
+              ),
+              Padding(
+                padding: EdgeInsets.all(8.0),
+                child: Text('200 \nfollowers'),
+              ),
+              Padding(
+                padding: EdgeInsets.all(8.0),
+                child: Text(' 500 \nfollowing'),
+              )
+            ],
+          ),
+          Padding(
+            padding: EdgeInsets.all(8.0),
+            child: Text(
+              'Gynella Ella', 
+            style: TextStyle(
+              fontWeight: FontWeight.bold, 
+              fontSize: 20,
+              ),),
+          ),
+          Padding(
+            padding: EdgeInsets.all(8.0),
+            child: Text('Chocheta si aranjata'),
+          ),
+       Row(
+        children: [
+          
         ],
+       )
+        ],
+
       ),
       );
   }
