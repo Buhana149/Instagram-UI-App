@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:instagram_ui/containers/post_container.dart';
 import 'package:instagram_ui/containers/story_container.dart';
+import 'package:instagram_ui/messenger_page/messenger.dart';
 
 class HomePage extends StatelessWidget {
-    final List _post = [
+  final List _post = [
     'post 1',
     'post 2',
     'post 3',
@@ -20,7 +21,7 @@ class HomePage extends StatelessWidget {
     'story 5',
     'story 6',
   ];
-   HomePage({super.key});
+  HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -42,7 +43,10 @@ class HomePage extends StatelessWidget {
               color: Colors.grey[600],
             ),
             tooltip: 'Messenger',
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: ((context) => MessengerPage())));
+            },
           ),
         ],
       ),
