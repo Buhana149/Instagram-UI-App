@@ -1,4 +1,9 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
+import 'package:instagram_ui/tabs_profile/first_tab_profile.dart';
+import 'package:instagram_ui/tabs_profile/second_tab_profile.dart';
+import 'package:instagram_ui/tabs_profile/third_tab_profile.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
@@ -36,7 +41,7 @@ class ProfilePage extends StatelessWidget {
         ],
       ),
 
-      body: const Column(
+      body:  const Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
            Row(
@@ -77,12 +82,44 @@ class ProfilePage extends StatelessWidget {
             padding: EdgeInsets.all(8.0),
             child: Text('Chocheta si aranjata'),
           ),
-       Row(
-        children: [
-          
-        ],
-       )
-        ],
+
+            Expanded(
+              child: DefaultTabController(
+                length: 3, 
+                child: Scaffold(
+                  body: Column(
+                    children: [
+                      TabBar(
+                        tabs: [
+                          Tab(
+                            icon: Icon(Icons.grid_on),
+                          ),
+                          Tab(
+                            icon: Icon(Icons.video_collection),
+                          ),
+                          Tab(
+                            icon: Icon(Icons.person_pin_sharp),
+                          )
+                        ],
+                      ),
+                      Expanded(
+                        child: TabBarView(
+                          children: [
+                            FirstTab(),
+                            SecondTab(),
+                            ThirdTab(),
+                          ]),
+                      ),
+                    ],
+                  ),
+              
+                )
+                
+                ),
+            ),
+    
+        ]
+        
 
       ),
       );
