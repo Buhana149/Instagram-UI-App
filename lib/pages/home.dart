@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:instagram_ui/containers/post_container.dart';
 import 'package:instagram_ui/containers/story_container.dart';
-import 'package:instagram_ui/messenger_page/messenger.dart';
+import 'package:instagram_ui/pages/messenger.dart';
 
 class HomePage extends StatelessWidget {
   final List _post = [
