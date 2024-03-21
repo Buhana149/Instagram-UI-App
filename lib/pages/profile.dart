@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:instagram_ui/tabs_profile/first_tab_profile.dart';
 import 'package:instagram_ui/tabs_profile/second_tab_profile.dart';
 import 'package:instagram_ui/tabs_profile/third_tab_profile.dart';
@@ -41,8 +39,7 @@ class ProfilePage extends StatelessWidget {
         ],
       ),
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+
       body:  const Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -121,20 +118,6 @@ class ProfilePage extends StatelessWidget {
             ),
     
         ]
-        
-
-=======
-=======
->>>>>>> Stashed changes
-      body: Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Icon(Icons.person)
-        ],
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
       ),
       );
   }
