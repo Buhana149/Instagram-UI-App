@@ -41,6 +41,7 @@ class ProfilePage extends StatelessWidget {
         ],
       ),
 
+<<<<<<< Updated upstream
       body:  const Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -121,6 +122,13 @@ class ProfilePage extends StatelessWidget {
         ]
         
 
+=======
+      body: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Icon(Icons.person)
+        ],
+>>>>>>> Stashed changes
       ),
       );
   }
