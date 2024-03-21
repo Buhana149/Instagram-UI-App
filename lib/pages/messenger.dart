@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:instagram_ui/containers/chat_box.dart';
+import 'package:instagram_ui/utilities/chat_box.dart';
 
 class MessengerPage extends StatelessWidget {
    MessengerPage({super.key});

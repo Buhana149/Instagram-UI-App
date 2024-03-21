@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:instagram_ui/containers/post_container.dart';
-import 'package:instagram_ui/containers/story_container.dart';
+import 'package:instagram_ui/utilities/post_container.dart';
+import 'package:instagram_ui/utilities/story_container.dart';
 import 'package:instagram_ui/pages/messenger.dart';
 import 'package:instagram_ui/pages/story_page.dart';
 
