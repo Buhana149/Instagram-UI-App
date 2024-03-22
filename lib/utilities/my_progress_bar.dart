@@ -11,6 +11,7 @@ class MyProgressBar extends StatelessWidget {
     return LinearPercentIndicator(
       barRadius: Radius.circular(12),
       lineHeight: 10,
+      percent: percentWatched,
       progressColor: Colors.grey[200],
       backgroundColor: Colors.grey[600],
     );
